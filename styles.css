@@ -1,0 +1,17 @@
+/* Task: Add basic styles for body, header, main, and footer */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.search-section, .results-section {
+    width: 90%;
+    margin: auto;
+}
+
+/* Task: Extend these styles to improve layout and responsiveness */
+
