@@ -1,17 +1,81 @@
-/* Task: Add basic styles for body, header, main, and footer */
+/* styles.css */
+
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header, footer {
-    text-align: center;
-    padding: 10px;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-.search-section, .results-section {
-    width: 90%;
-    margin: auto;
+main {
+  padding: 20px;
 }
 
-/* Task: Extend these styles to improve layout and responsiveness */
+.search-section {
+  margin-bottom: 20px;
+}
 
+.search-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#searchInput {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+#searchButton {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.results-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.recipe {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #searchInput {
+    margin-right: 0;
+    margin-bottom: 10px;
+    max-width: none;
+  }
+}
